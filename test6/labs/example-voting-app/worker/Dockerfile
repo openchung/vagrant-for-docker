@@ -1,5 +1,6 @@
-FROM java:7
+FROM openjdk:7
 
+RUN sed -i '/jessie-updates/d' /etc/apt/sources.list
 RUN apt-get update -qq && apt-get install -y maven && apt-get clean
 
 WORKDIR /code

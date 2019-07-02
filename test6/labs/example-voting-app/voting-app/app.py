@@ -1,3 +1,4 @@
+#! /usr/bin/env python
 # -*- coding: utf-8 -*-
 # import sys
 # reload(sys)
@@ -19,7 +20,6 @@ hostname = socket.gethostname()
 
 redis = connect_to_redis("redis")
 app = Flask(__name__)
-
 
 @app.route("/", methods=['POST', 'GET'])
 def hello():
@@ -45,6 +45,5 @@ def hello():
     resp.set_cookie('vote', vote)
     return resp
 
-
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=80, debug=True)
+    app.run(host="0.0.0.0", port=80, debug=True)
