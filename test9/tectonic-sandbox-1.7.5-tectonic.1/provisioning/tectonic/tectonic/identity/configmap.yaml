@@ -6,9 +6,9 @@ metadata:
 data:
   issuer: https://console.tectonicsandbox.com/identity
   consoleClientID: tectonic-console
-  consoleSecret: bkRTBES7gp-z9V_ZO8zXog
+  consoleSecret: CB9c_b0VaJy919idjqW9Gw
   kubectlClientID: tectonic-kubectl
-  kubectlSecret: AUn1FQ9Yhxw60eRtUVjhbw
+  kubectlSecret: PkI5dNEDbr3kTLKHQ9Joww
   config.yaml: |
     issuer: https://console.tectonicsandbox.com/identity
     storage:
@@ -35,16 +35,16 @@ data:
       - 'https://console.tectonicsandbox.com/alertmanager/auth/callback'
       - 'https://console.tectonicsandbox.com/grafana/auth/callback'
       name: 'Tectonic Console'
-      secret: bkRTBES7gp-z9V_ZO8zXog
+      secret: CB9c_b0VaJy919idjqW9Gw
     - id: tectonic-kubectl
       public: true
       trustedPeers:
       - tectonic-console
       name: 'Kubectl'
-      secret: AUn1FQ9Yhxw60eRtUVjhbw
+      secret: PkI5dNEDbr3kTLKHQ9Joww
     enablePasswordDB: true
     staticPasswords:
     - email: "admin@example.com"
       hash: "$2a$10$rQ13TGgO3wP3QPFVzFt8ReIjb5Tb7WxVMIuc54Lwu2v446vrDjy06"
       username: "admin"
-      userID: "0ob1NuDSgVt48zHoNN8x4g"
+      userID: "XKV4PwQ4QPsSbM6q9EhcGQ"

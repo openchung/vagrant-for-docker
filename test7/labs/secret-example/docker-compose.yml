@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 
 services:
 
@@ -27,7 +27,7 @@ services:
         delay: 10s
 
   mysql:
-    image: mysql
+    image: mysql:5.7
     secrets:
       - my-pw
     environment:
@@ -50,6 +50,6 @@ networks:
   my-network:
     driver: overlay
 
-# secrets:
-#   my-pw:
-#    file: ./password
+secrets:
+  my-pw:
+    file: ./password

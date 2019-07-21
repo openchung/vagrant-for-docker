@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 
 services:
 
@@ -23,9 +23,10 @@ services:
       update_config:
         parallelism: 1
         delay: 10s
+        order: stop-first
 
   mysql:
-    image: mysql
+    image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: wordpress
